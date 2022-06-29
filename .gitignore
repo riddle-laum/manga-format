@@ -1,0 +1,5 @@
+*.mjs
+*.js
+_*
+package*.json
+node_modules
