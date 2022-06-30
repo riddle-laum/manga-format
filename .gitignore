@@ -1,5 +1,7 @@
 _*
-node_modules
-tsconfig.tsbuildinfo
-package-lock.json
 test.mjs
+build-mjs
+build-cjs
+node_modules
+package-lock.json
+tsconfig.tsbuildinfo
