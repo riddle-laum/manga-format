@@ -1,5 +1,4 @@
-*.mjs
-*.js
 _*
-package*.json
 node_modules
+*.tsbuildinfo
+package-lock.json
