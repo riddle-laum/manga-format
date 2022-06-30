@@ -4,7 +4,9 @@
     "build-mjs": "npx tsc --outDir ./build-mjs --declaration true",
     "build-cjs": "npx tsc --outDir ./build-cjs --declaration true --module commonjs ; npm run rename-cjs",
 
-    "rename-cjs": "node meta/rename.cjs"
+    "rename-cjs": "node meta/rename.cjs",
+
+    "test": "npx tsc test.mts --module es2022 ; node test.mjs"
   },
   "devDependencies": {
     "typescript": "^4.7.4"
