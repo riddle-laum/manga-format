@@ -105,7 +105,7 @@ export type Author = {
      * other links
      * { "page name" => "page url" }
      */
-    other?: Map<string, string>;
+    other?: { [name: string]: string };
   };
 };
 

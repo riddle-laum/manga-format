@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build-all": "npm run build-mjs ; npm run build-cjs",
+    "build-mjs": "npx tsc --outDir ./build-mjs --declaration true",
+    "build-cjs": "npx tsc --outDir ./build-cjs --declaration true --module commonjs ; npm run rename-cjs",
+
+    "rename-cjs": "node meta/rename.cjs"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
