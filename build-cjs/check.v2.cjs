@@ -43,8 +43,10 @@ function isManga(target) {
             const includeTypes = Array.from(new Set(array.map(v => typeof v)));
             if (includeTypes.length != 1 || includeTypes[0] != 'string') {
                 let typesString = includeTypes.join(' | ');
-                if (includeTypes.length < 2)
+                if (includeTypes.length > 1)
                     typesString = `(${includeTypes})`;
+                if (!includeTypes.length)
+                    typesString = 'void';
                 error(`Manga.pages must be "string[]" type, but it is "${typesString}[]" type`);
                 need = false;
             }
