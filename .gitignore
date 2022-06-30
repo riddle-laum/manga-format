@@ -1,4 +1,4 @@
 _*
 node_modules
-*.tsbuildinfo
+tsconfig.tsbuildinfo
 package-lock.json
